@@ -1,19 +1,19 @@
-/* A Bison parser, made by GNU Bison 2.7.12-4996.  */
+/* A Bison parser, made by GNU Bison 3.0.4.  */
 
 /* Bison interface for Yacc-like parsers in C
-   
-      Copyright (C) 1984, 1989-1990, 2000-2013 Free Software Foundation, Inc.
-   
+
+   Copyright (C) 1984, 1989-1990, 2000-2015 Free Software Foundation, Inc.
+
    This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
    the Free Software Foundation, either version 3 of the License, or
    (at your option) any later version.
-   
+
    This program is distributed in the hope that it will be useful,
    but WITHOUT ANY WARRANTY; without even the implied warranty of
    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
    GNU General Public License for more details.
-   
+
    You should have received a copy of the GNU General Public License
    along with this program.  If not, see <http://www.gnu.org/licenses/>.  */
 
@@ -26,13 +26,13 @@
    special exception, which will cause the skeleton and the resulting
    Bison output files to be licensed under the GNU General Public
    License without this special exception.
-   
+
    This special exception was added by the Free Software Foundation in
    version 2.2 of Bison.  */
 
 #ifndef YY_YY_CHUCK_TAB_H_INCLUDED
 # define YY_YY_CHUCK_TAB_H_INCLUDED
-/* Enabling traces.  */
+/* Debug traces.  */
 #ifndef YYDEBUG
 # define YYDEBUG 0
 #endif
@@ -40,127 +40,127 @@
 extern int yydebug;
 #endif
 
-/* Tokens.  */
+/* Token type.  */
 #ifndef YYTOKENTYPE
 # define YYTOKENTYPE
-   /* Put the tokens into the symbol table, so that GDB and other debuggers
-      know about them.  */
-   enum yytokentype {
-     ID = 258,
-     STRING_LIT = 259,
-     CHAR_LIT = 260,
-     NUM = 261,
-     FLOAT = 262,
-     POUND = 263,
-     COMMA = 264,
-     COLON = 265,
-     SEMICOLON = 266,
-     LPAREN = 267,
-     RPAREN = 268,
-     LBRACK = 269,
-     RBRACK = 270,
-     LBRACE = 271,
-     RBRACE = 272,
-     DOT = 273,
-     PLUS = 274,
-     MINUS = 275,
-     TIMES = 276,
-     DIVIDE = 277,
-     PERCENT = 278,
-     EQ = 279,
-     NEQ = 280,
-     LT = 281,
-     LE = 282,
-     GT = 283,
-     GE = 284,
-     AND = 285,
-     OR = 286,
-     ASSIGN = 287,
-     IF = 288,
-     THEN = 289,
-     ELSE = 290,
-     WHILE = 291,
-     FOR = 292,
-     DO = 293,
-     LOOP = 294,
-     BREAK = 295,
-     CONTINUE = 296,
-     NULL_TOK = 297,
-     FUNCTION = 298,
-     RETURN = 299,
-     QUESTION = 300,
-     EXCLAMATION = 301,
-     S_OR = 302,
-     S_AND = 303,
-     S_XOR = 304,
-     PLUSPLUS = 305,
-     MINUSMINUS = 306,
-     DOLLAR = 307,
-     POUNDPAREN = 308,
-     PERCENTPAREN = 309,
-     SIMULT = 310,
-     PATTERN = 311,
-     CODE = 312,
-     TRANSPORT = 313,
-     HOST = 314,
-     TIME = 315,
-     WHENEVER = 316,
-     NEXT = 317,
-     UNTIL = 318,
-     EVERY = 319,
-     BEFORE = 320,
-     AFTER = 321,
-     AT = 322,
-     AT_SYM = 323,
-     ATAT_SYM = 324,
-     NEW = 325,
-     SIZEOF = 326,
-     TYPEOF = 327,
-     SAME = 328,
-     PLUS_CHUCK = 329,
-     MINUS_CHUCK = 330,
-     TIMES_CHUCK = 331,
-     DIVIDE_CHUCK = 332,
-     S_AND_CHUCK = 333,
-     S_OR_CHUCK = 334,
-     S_XOR_CHUCK = 335,
-     SHIFT_RIGHT_CHUCK = 336,
-     SHIFT_LEFT_CHUCK = 337,
-     PERCENT_CHUCK = 338,
-     SHIFT_RIGHT = 339,
-     SHIFT_LEFT = 340,
-     TILDA = 341,
-     CHUCK = 342,
-     COLONCOLON = 343,
-     S_CHUCK = 344,
-     AT_CHUCK = 345,
-     LEFT_S_CHUCK = 346,
-     UNCHUCK = 347,
-     UPCHUCK = 348,
-     CLASS = 349,
-     INTERFACE = 350,
-     EXTENDS = 351,
-     IMPLEMENTS = 352,
-     PUBLIC = 353,
-     PROTECTED = 354,
-     PRIVATE = 355,
-     STATIC = 356,
-     ABSTRACT = 357,
-     CONST = 358,
-     SPORK = 359,
-     ARROW_RIGHT = 360,
-     ARROW_LEFT = 361,
-     L_HACK = 362,
-     R_HACK = 363
-   };
+  enum yytokentype
+  {
+    ID = 258,
+    STRING_LIT = 259,
+    CHAR_LIT = 260,
+    NUM = 261,
+    FLOAT = 262,
+    POUND = 263,
+    COMMA = 264,
+    COLON = 265,
+    SEMICOLON = 266,
+    LPAREN = 267,
+    RPAREN = 268,
+    LBRACK = 269,
+    RBRACK = 270,
+    LBRACE = 271,
+    RBRACE = 272,
+    DOT = 273,
+    PLUS = 274,
+    MINUS = 275,
+    TIMES = 276,
+    DIVIDE = 277,
+    PERCENT = 278,
+    EQ = 279,
+    NEQ = 280,
+    LT = 281,
+    LE = 282,
+    GT = 283,
+    GE = 284,
+    AND = 285,
+    OR = 286,
+    ASSIGN = 287,
+    IF = 288,
+    THEN = 289,
+    ELSE = 290,
+    WHILE = 291,
+    FOR = 292,
+    DO = 293,
+    LOOP = 294,
+    BREAK = 295,
+    CONTINUE = 296,
+    NULL_TOK = 297,
+    FUNCTION = 298,
+    RETURN = 299,
+    QUESTION = 300,
+    EXCLAMATION = 301,
+    S_OR = 302,
+    S_AND = 303,
+    S_XOR = 304,
+    PLUSPLUS = 305,
+    MINUSMINUS = 306,
+    DOLLAR = 307,
+    POUNDPAREN = 308,
+    PERCENTPAREN = 309,
+    ATPAREN = 310,
+    SIMULT = 311,
+    PATTERN = 312,
+    CODE = 313,
+    TRANSPORT = 314,
+    HOST = 315,
+    TIME = 316,
+    WHENEVER = 317,
+    NEXT = 318,
+    UNTIL = 319,
+    EVERY = 320,
+    BEFORE = 321,
+    AFTER = 322,
+    AT = 323,
+    AT_SYM = 324,
+    ATAT_SYM = 325,
+    NEW = 326,
+    SIZEOF = 327,
+    TYPEOF = 328,
+    SAME = 329,
+    PLUS_CHUCK = 330,
+    MINUS_CHUCK = 331,
+    TIMES_CHUCK = 332,
+    DIVIDE_CHUCK = 333,
+    S_AND_CHUCK = 334,
+    S_OR_CHUCK = 335,
+    S_XOR_CHUCK = 336,
+    SHIFT_RIGHT_CHUCK = 337,
+    SHIFT_LEFT_CHUCK = 338,
+    PERCENT_CHUCK = 339,
+    SHIFT_RIGHT = 340,
+    SHIFT_LEFT = 341,
+    TILDA = 342,
+    CHUCK = 343,
+    COLONCOLON = 344,
+    S_CHUCK = 345,
+    AT_CHUCK = 346,
+    LEFT_S_CHUCK = 347,
+    UNCHUCK = 348,
+    UPCHUCK = 349,
+    CLASS = 350,
+    INTERFACE = 351,
+    EXTENDS = 352,
+    IMPLEMENTS = 353,
+    PUBLIC = 354,
+    PROTECTED = 355,
+    PRIVATE = 356,
+    STATIC = 357,
+    ABSTRACT = 358,
+    CONST = 359,
+    SPORK = 360,
+    ARROW_RIGHT = 361,
+    ARROW_LEFT = 362,
+    L_HACK = 363,
+    R_HACK = 364
+  };
 #endif
 
-
+/* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
-typedef union YYSTYPE
+
+union YYSTYPE
 {
-/* Line 2053 of yacc.c  */
-#line 59 "chuck.y"
+#line 59 "chuck.y" /* yacc.c:1909  */
 
     int pos;
     int ival;
@@ -184,30 +184,19 @@ typedef union YYSTYPE
     a_Array_Sub array_sub;
     a_Complex complex_exp;
     a_Polar polar_exp;
+    a_Vec vec_exp; // ge: added 1.3.5.3
 
+#line 190 "chuck.tab.h" /* yacc.c:1909  */
+};
 
-/* Line 2053 of yacc.c  */
-#line 191 "chuck.tab.h"
-} YYSTYPE;
+typedef union YYSTYPE YYSTYPE;
 # define YYSTYPE_IS_TRIVIAL 1
-# define yystype YYSTYPE /* obsolescent; will be withdrawn */
 # define YYSTYPE_IS_DECLARED 1
 #endif
 
+
 extern YYSTYPE yylval;
 
-#ifdef YYPARSE_PARAM
-#if defined __STDC__ || defined __cplusplus
-int yyparse (void *YYPARSE_PARAM);
-#else
-int yyparse ();
-#endif
-#else /* ! YYPARSE_PARAM */
-#if defined __STDC__ || defined __cplusplus
 int yyparse (void);
-#else
-int yyparse ();
-#endif
-#endif /* ! YYPARSE_PARAM */
 
 #endif /* !YY_YY_CHUCK_TAB_H_INCLUDED  */
